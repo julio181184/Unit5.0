@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+        
+            #box {
+                width: 500px;
+                margin: 0 auto;
+                margin-top: 100px;
+                border: 1px solid;
+                text-align: center;
+                background-color: gainsboro;
+                font-family:serif;
+                font-size: 20px;
+                padding: 25px 15px;
+
+            }
+            
+            #box1 {
+                width: 500px;
+                margin: 0 auto;
+                margin-top: 100px;
+                border: 1px solid;
+                text-align: center;
+                background-color: gainsboro;
+                font-family:serif;
+                font-size: 20px;
+                padding: 25px 15px;
+
+            }
+            #botton1{
+                margin-top:25px;
+            }
+            #botton2{
+                margin-top:25px;
+            }
+        
+        </style>
+    
+    </head>
+    <body>
+        
+        <div id="box"></div>
+        <center>
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="botton1">comprueba su respuesta
+                <i class="material-icons right">send</i>
+            </button><br><br>
+            <textarea class="res"></textarea>
+        </center>
+        
+        <div id="box1"></div>
+        <center>
+            
+        </center>
+        <center>
+        <button class="btn waves-effect waves-light" type="submit" name="action" id="botton2">siguiente
+                <i class="material-icons right">send</i>
+            </button><br><br>
+        </center>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#botton2').click(function() {
+                // Recargo la página
+                location.reload();
+            });
+    });
+</script>
+        <script src="script.js"></script>
+    </body>
+</html>
